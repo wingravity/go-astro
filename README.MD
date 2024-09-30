@@ -10,7 +10,7 @@ npm install
 npm run build
 ```
 
-Start the server:
+Start the server on port :8080:
 ```bash
 cd ../
 go run main.go
