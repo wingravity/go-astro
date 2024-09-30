@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import logo from "../astro-logo-dark.png";
 
 ---
 
@@ -11,6 +13,7 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1 is:raw>Hello {{.Name}}</h1>
+		<Image src={logo} alt="LOGO" width={200} />
+		<h1>Hello [[.Name]]</h1>
 	</body>
 </html>

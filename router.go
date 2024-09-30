@@ -25,7 +25,7 @@ type ViewsHandler struct {
 
 func NewTemplatesHandler() *ViewsHandler {
 	return &ViewsHandler{
-		Index: template.Must(template.ParseFiles("client/dist/index.html")),
+		Index: template.Must(template.New("index").Delims("[[", "]]").ParseFiles("client/dist/index.html")),
 	}
 }
 
