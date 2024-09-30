@@ -13,5 +13,5 @@ npm run build
 Start the server on port :8080:
 ```bash
 cd ../
-go run main.go
+go run .
 ```
